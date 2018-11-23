@@ -4,7 +4,19 @@
 
 import random
 
-ans = random.randint(1, 100)
+print('Welcome to the number guess game!')
+
+while True:
+	small = input('Enter what number you want to begin: ')
+	big = input('Enter what number you want to end: ')
+	small = int(small)
+	big = int(big)
+	if big > small:
+		break
+	else:
+		print('End number should be larger than start number!')
+
+ans = random.randint(small, big)
 time = 0
 
 while True:
