@@ -10,7 +10,7 @@ time = 0
 while True:
 	guess = input('Try your guess: ')
 	guess = int(guess)
-	time = time + 1
+	time += 1
 	if guess == ans:
 		print('How smart!')
 		print('You tried', time, 'times to get the answer!')
@@ -19,3 +19,4 @@ while True:
 		print('Too big')
 	elif guess < ans:
 		print('Too small')
+	print('This is your guess no.', time, '.')
